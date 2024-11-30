@@ -230,7 +230,7 @@ class Vae_Cluster_Es(nn.Module):
             self.log_sigma2_c.data = torch.log(torch.from_numpy(gmm.covariances_).cuda().float())
 
             if not self.args.pretrain_weight_save:
-                os.mkdirs(self.args.pretrain_weight_save)
+                os.mkdir(self.args.pretrain_weight_save)
 
             torch.save(self.state_dict(), os.path.join(self.args.pretrain_weight_save,self.args.dataset,self.args.dataset + f'_cluster_{self.args.num_cluster}_'  +'pretrain_weight.pth'))
             self.load_state_dict(torch.load(os.path.join(self.args.pretrain_weight_save,self.args.dataset,self.args.dataset + f'_cluster_{self.args.num_cluster}_'  +'pretrain_weight.pth')))
