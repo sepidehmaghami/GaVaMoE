@@ -4,14 +4,14 @@ import torch.nn as nn
 import numpy as np
 import torch
 from typing import List, Optional, Tuple, Union
-from vae_cluster import Vae_Cluster_Es
+from model.vae_cluster import Vae_Cluster_Es
 import warnings
 warnings.filterwarnings('ignore')
 
 from transformers import LlamaPreTrainedModel,AutoModelForCausalLM
 from transformers.modeling_outputs import CausalLMOutputWithCrossAttentions
 from transformers.modeling_outputs import CausalLMOutputWithCrossAttentions
-from moe_layer_llama import MoeBlock_RS
+from model.moe_layer_llama import MoeBlock_RS
 
 class Vmoe_llama3(LlamaPreTrainedModel):
     def __init__(self, config, tokenizer, gate_index_list, user_embed, item_embed, use_lora = False):
