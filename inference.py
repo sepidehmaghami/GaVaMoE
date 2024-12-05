@@ -30,10 +30,15 @@ class Args:
     amazon: user: 7506 item: 7360
 '''
 ### Inference Setting
-n_user         = 27147
-n_item         = 20266
+#yelp
+# n_user         = 27147
+# n_item         = 20266
+#tripadvisor
+n_user         = 9765
+n_item         = 6280
 latent_dim     = 128
-num_cluster    = 4
+# num_cluster    = 4
+num_cluster    = 5
 embedding_size = 768
 vae_model_path = ''
 tokenizer_path = 'meta-llama/Llama-3.1-8B-Instruct'
