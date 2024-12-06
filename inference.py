@@ -43,7 +43,7 @@ embedding_size = 768
 vae_model_path = './output/TripAdvisor/TripAdvisor_cluster_5_best_weight.pth'
 tokenizer_path = 'meta-llama/Llama-3.1-8B-Instruct'
 llm_model_path = './output/TripAdvisor_Cluster4/explain'
-data_path      = ''
+data_path      = './dataset/cache/test_dataset_TripAdvisor'
 excel_path     = './excel/TripAdvisor/llama_TripAdvisor_cluster5.xlsx'
 txt_path       = './excel/yelp/llama_TripAdvisor_cluster5.txt'
 
