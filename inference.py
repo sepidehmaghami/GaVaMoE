@@ -40,12 +40,12 @@ latent_dim     = 128
 # num_cluster    = 4
 num_cluster    = 5
 embedding_size = 768
-vae_model_path = '/content/TripAdvisor/TripAdvisor/TripAdvisor_cluster_5_best_weight.pth'
+vae_model_path = '/output/TripAdvisor/TripAdvisor_cluster_5_best_weight.pth'
 tokenizer_path = 'meta-llama/Llama-3.1-8B-Instruct'
-llm_model_path = ''
+llm_model_path = './output/TripAdvisor_Cluster4/explain'
 data_path      = ''
-excel_path     = ''
-txt_path       = ''
+excel_path     = './excel/TripAdvisor/llama_TripAdvisor_cluster5.xlsx'
+txt_path       = './excel/yelp/llama_TripAdvisor_cluster5.txt'
 
 args = Args(embedding_size = embedding_size, latent_dim = latent_dim, num_cluster = num_cluster)
 config = llama_config
