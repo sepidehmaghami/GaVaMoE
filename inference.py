@@ -45,7 +45,7 @@ tokenizer_path = 'meta-llama/Llama-3.1-8B-Instruct'
 llm_model_path = './output/TripAdvisor_Cluster4/explain'
 data_path      = './dataset/cache/test_dataset_TripAdvisor'
 excel_path     = './excel/TripAdvisor/llama_TripAdvisor_cluster5.xlsx'
-txt_path       = './excel/yelp/llama_TripAdvisor_cluster5.txt'
+txt_path       = './excel/TripAdvisor/llama_TripAdvisor_cluster5.txt'
 
 args = Args(embedding_size = embedding_size, latent_dim = latent_dim, num_cluster = num_cluster)
 config = llama_config
